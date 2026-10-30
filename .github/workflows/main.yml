@@ -4,11 +4,10 @@ on:
   build:
   pull_request: branch[main]
   jobs:
-   run_on: ubuntu-latest
-   -name: Checkout repository
-    run: actions/Checkout@v4
-   -name: Github secrets
-    run: echo"github secrests executed successfully"
-    env:
-      ${{secrets.API_KEY}}
-      
+    test:
+     run_on: ubuntu-latesY
+    steps:       
+    -  run: echo "github secrests executed successfully"
+       env:
+        KEY: ${{secrets.API_KEY}}
+     
