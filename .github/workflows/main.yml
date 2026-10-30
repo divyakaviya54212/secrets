@@ -6,7 +6,7 @@ on:
   jobs:
    run_on: ubuntu-latest
    -name: Checkout repository
-    run: actions/checkout@v3
+    run: actions/Checkout@v4
    -name: Github secrets
     run: echo"github secrests executed successfully"
     env:
