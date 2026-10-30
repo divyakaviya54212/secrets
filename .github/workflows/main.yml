@@ -1,12 +1,9 @@
-name: Github Secrets
-on:
-  push:
- 
-  jobs:
-    test:
-     run_on: ubuntu-latesY
-    steps:       
-    -  run: echo "github secrests executed successfully"
-       env:
-        KEY: ${{secrets.API_KEY}}
-     
+name: Secrets
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Github secrests executed successfully!"
+        env:
+          KEY: ${{ secrets.API_KEY }}
