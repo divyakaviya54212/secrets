@@ -7,3 +7,5 @@ jobs:
       - run: echo "Github secrests executed successfully!"
         env:
           KEY: ${{ secrets.API_KEY }}
+
+          
