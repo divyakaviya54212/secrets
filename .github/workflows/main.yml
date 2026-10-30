@@ -1,8 +1,7 @@
 name: Github Secrets
 on:
   push:
-  build:
-  pull_request: 
+ 
   jobs:
     test:
      run_on: ubuntu-latesY
