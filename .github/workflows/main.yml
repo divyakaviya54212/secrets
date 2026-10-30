@@ -1,14 +1,14 @@
 name: Github Secrets
- on:
+on:
   push: branch[main]
   build:
   pull_request: branch[main]
   jobs:
    run_on: ubuntu-latest
-    -name: checkout repository
-     run: actions/checkout@v3
-    -name: Github secrets
-     run: echo"github secrests executed successfully"
-     env:
+   -name: Checkout repository
+    run: actions/checkout@v3
+   -name: Github secrets
+    run: echo"github secrests executed successfully"
+    env:
       ${{secrets.API_KEY}}
       
